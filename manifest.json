@@ -1,0 +1,35 @@
+ {
+  "manifest_version": 2,
+  "name": "Sh Suporte",
+  "version": "1.1",
+
+  "description": "Extensão para o suporte da Shooting House",
+  "icons":{
+    "48": "img/icon.png"
+   },
+   "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_title": "Sh Suporte",
+    "default_popup": "menu.html"
+   },
+    "permissions":["storage", "tabs"],
+
+  "content_scripts": [{
+      "matches": ["*://*.shootinghouse.com.br/*", 
+                  "*://*.shootinghouse.com.br/despachante/*",
+                  "*://*.shootinghouse.com.br/documentos/*",
+                  "*://*.shootinghouse.com.br/crm/*",
+                  "*://*.shootinghouse.com.br/email/*",
+                  "*://*.shootinghouse.com.br/acesso/*",
+                  "*://*.shootinghouse.com.br/clube/*",
+                  "*://*.shootinghouse.com.br/arma-avulsa",
+                  "*://*.shootinghouse.com.br/prestacao-contas",
+                  "*://*.shootinghouse.com.br/financeiro/*",
+                  "*://*.shootinghouse.com.br/loja/*",
+                  "*://*.shootinghouse.com.br/loja/ordem-de-servico/*",
+		  "*://*.shootinghouse.com.br/administrativo/*"
+                ],
+      "js": ["main.js"]
+   }]
+
+}
