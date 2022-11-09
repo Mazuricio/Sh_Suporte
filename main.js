@@ -11,6 +11,9 @@ if(url == "https://beta.shootinghouse.com.br/login"){
 	var botao = document.getElementsByClassName("btn btn-warning")
 	botao.goback.click()
 // -- 
+} else if(url == "https://www.shootinghouse.com.br/verificacao-integridade"){
+	window.location.href = "https://www.shootinghouse.com.br/admin/atirador/filiado"
+
 } else {
 	// Muda o Titulo da Pagina 
 	var t1 = document.getElementsByClassName("dropdown-toggle")
